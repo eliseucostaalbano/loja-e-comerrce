@@ -1,11 +1,11 @@
-import Login from "./components/Login/Login";
-import Cadastro from "./components/Cadastro/Cadastro";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/paginas/Home";
+
+
+
 function App() {
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <Login />
-      {/* <Cadastro />   */}
-    </div>
+<Home />
   );
 }
 
