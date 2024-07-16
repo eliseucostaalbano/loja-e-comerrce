@@ -15,10 +15,9 @@ export default function Login(){
             "/>
           <button className="w-[400px] h-[50px] bg-[#C92071] text-white  my-4  self-center  rounded-md " type="submit">Criar Conta</button>
         </div>
-    
-       <h2 className="flex items-center justify-center ">Ou faça login com 
+      <h2 className="flex items-center justify-center ">Ou faça login com 
         <img src="src\assets\gmail.jpeg" alt="" 
-        className="w-4  ml-4 mr-4"
+        className="w-5  ml-4 mr-4"
         />
          <FaFacebookF className=" w-4 cursor-pointer bg-[#1877F2]  text-white rounded-full" /> </h2>
         </div> 
