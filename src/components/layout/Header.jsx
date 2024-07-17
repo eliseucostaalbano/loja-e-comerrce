@@ -1,5 +1,6 @@
 import DigitalCollege from "../../assets/DigitalCollege.png";
 import { CiSearch } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
 import { Button } from "@/components/ui/button";
 
 const Menu = [
@@ -27,12 +28,15 @@ const Menu = [
 
 export default function Header() {
   return (
-    <div className=" pt-4">
+    <div className=" pt-4 bg-white shadow-md">
       {/* Nav Bar de cima */}
       <div className="w-full">
-        <div className="container flex w-[100%] flex-start">
-          <div className="container flex items-center ">
-            <a href="#" className="font-bold text-2Xl sm:text-3Xl flex gap-2 ">
+        <div className="container flex justify-between items-center mx-auto px-4">
+          <div className="flex items-center ">
+            <a
+              href="#"
+              className="font-bold text-2Xl sm:text-3Xl flex items-center gap-2 "
+            >
               <img
                 src={DigitalCollege}
                 alt="DigitalCollege"
@@ -42,35 +46,44 @@ export default function Header() {
             </a>
           </div>
           {/* Barra  de busca e ordem dos butões*/}
-          <div className="relative  hidden sm:block">
+          <div className="relative  hidden sm:block flex-1 mx-4">
             <input
               type="text"
               placeholder="Buscar"
-              className="w-[400px] rounded-lm border border-gray px-2 py-2 mr-5"
+              className="w-full rounded-lm border border-gray-300 px-2 py-2"
             />
-            <CiSearch className="w-6 cursor-pointer text-gray rounded-full                    absolute top-1/2 -translate-y-1/2 right-3 mr-5" />
+            <CiSearch className="absolute top-1/2 transform -translate-y-1/2 right-3 text-gray-500 cursor-pointer" />
           </div>
-          <div className="gap-4 flex">
+          <div className="gap-4 flex items-center">
             <a href="#">
-              <h1 className="underline">Cadastre-se</h1>
+              <h1 className="underline flex text-gray-700">Cadastre-se</h1>
             </a>
             <Button
               onClick={() => alert("função indiponivel")}
-              className=" w-[150px] h-10 bg-[#C92071] text-white rounded-full                 hover:bg-[#C92071] hover:text-white"
+              className=" w-[150px] h-10 bg-[#C92071] text-white rounded-full hover:bg-[#C92071] hover:text-white"
             >
               Entrar
             </Button>
+            {/*Carrinho*/}
+            <button onClick={() => alert("função não Implementada")}
+              className=" bg-white py-1 px-4 rounded-full flex items-center gap-3 transition-all duration-200"
+              >
+            <span
+              className="hover:block hidden transition-all duration-200 bg-[#C92071] "
+              >Compar</span>
+              <CiShoppingCart className="text-[#C92071] w-6"/>
+            </button>
           </div>
         </div>
       </div>
       {/*NavBar baixa  */}
-      <div className="flex justify-start">
-        <ul className=" sm:flex items-center gap-4 mr-6">
+      <div className="flex mt-6 ml-8">
+        <ul className=" flex items-center gap-6  ">
           {Menu.map((data) => (
             <li key={data.id}>
               <a
                 href={data.link}
-                className="inline-block px-4 hover:underline hover:text-[#C92071]"
+                className=" text-gray-700 hover:underline hover:text-[#C92071]"
               >
                 {data.name}
               </a>

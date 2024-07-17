@@ -1,15 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
-import Home from "./components/paginas/Home";
-import Login from "./components/conta/Login";
+import Produtos from "./components/layout/Produtos";
 
 function App() {
   return (
     // <div>
-    <>
-      <Header />
-      <Login />
-    </>
+  
+       <Header />
+  
 
     // </div>
     //
