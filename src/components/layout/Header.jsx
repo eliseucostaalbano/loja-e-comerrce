@@ -2,27 +2,26 @@ import DigitalCollege from "../../assets/DigitalCollege.png";
 import { CiSearch } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Menu = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    rota: "/"
   },
   {
     id: 2,
     name: "Produtos",
-    link: "/#",
+    rota: "/produtos"
   },
   {
     id: 3,
     name: "Categorias",
-    link: "/#",
   },
   {
     id: 4,
     name: "Meus Pedidos",
-    link: "/#",
   },
 ];
 
@@ -81,12 +80,13 @@ export default function Header() {
         <ul className=" flex items-center gap-6  ">
           {Menu.map((data) => (
             <li key={data.id}>
-              <a
-                href={data.link}
-                className=" text-gray-700 hover:underline hover:text-[#C92071]"
-              >
-                {data.name}
-              </a>
+              <Link to={data.rota}>
+                <p
+                  className=" text-gray-700 hover:underline hover:text-[#C92071]"
+                >
+                  {data.name}
+                </p>
+              </Link>
             </li>
           ))}
         </ul>

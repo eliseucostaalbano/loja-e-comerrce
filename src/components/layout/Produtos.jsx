@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Header from "./Header";
+
 export default function Produtos() {
   const[produtos, setProdutos]=useState([])
 
@@ -10,6 +12,8 @@ export default function Produtos() {
     })
   },[])
   return (
+    <>
+    <Header/>
     <div className="flex flex-wrap w-full h-screen gap-4">
       {produtos.map((produto)=> (
       <div className="text-white w[300px] h-[200px] bg-black p-2 rounded-md overflow-hidden flex items-center justify-center flex-col" key={produto.id}>
@@ -19,5 +23,7 @@ export default function Produtos() {
       </div>
       ))}
     </div>
+    </>
+    
   );
 }
