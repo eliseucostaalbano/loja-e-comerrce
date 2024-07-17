@@ -6,10 +6,13 @@ import Login from "./components/conta/Login";
 function App() {
   return (
     // <div>
-    // <Header/>
+    <>
+      <Header />
+      <Login />
+    </>
+
     // </div>
-    <Login />
-    
+    //
   );
 }
 export default App;
