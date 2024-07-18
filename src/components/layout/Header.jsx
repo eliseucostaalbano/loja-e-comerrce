@@ -48,7 +48,7 @@ export default function Header() {
           <div className="relative  hidden sm:block flex-1 mx-4">
             <input
               type="text"
-              placeholder="Buscar"
+              placeholder="Pesquisar Produto..."
               className="w-full rounded-lm border border-gray-300 px-2 py-2"
             />
             <CiSearch className="absolute top-1/2 transform -translate-y-1/2 right-3 text-gray-500 cursor-pointer" />
