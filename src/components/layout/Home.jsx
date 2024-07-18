@@ -57,15 +57,13 @@ export default function Home() {
               <CarouselItem className=" flex w-full flex-row justify-center items-center">
                 <div className="w-[500px] my-8 flex flex-col justify-center gap-4 ">
                   <h1 className="text-yellow-300">
-                    
                     Melhores ofertas personalizadas
                   </h1>
                   <p className="font-bold text-5xl sm:text-6xl ">
                     Queima de estoque Nike
                   </p>
                   <p className="text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod
+                    {ListaTenis[0].description}
                   </p>
                   <div className="flex">
                     <Button className="w-[150px] h-10 bg-[#C92071] text-white rounded-full hover:bg-[#C92071] hover:text-white">
