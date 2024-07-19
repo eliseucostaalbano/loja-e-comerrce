@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 function ProdutosEmDestaque() {
   useEffect(() => {
@@ -22,9 +22,12 @@ function ProdutosEmDestaque() {
             <h1 className="font-bold">Produtos em Destaque</h1>
           </div>
           <div className="">
-            <Button className="pr-8 gap-3 text-[#C92071]">
+        <Link to="/produtos">
+        <Button className="pr-8 gap-3 text-[#C92071]">
               Ver todos <FaLongArrowAltRight className="" />
             </Button>
+        </Link>
+            
           </div>
         </div>
         <div className=" flex flex-wrap w-full h-full gap-2 mt-4 mb-4">
