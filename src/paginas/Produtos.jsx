@@ -1,3 +1,4 @@
+import Filtro from "../components/ecommerce/Filtro";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
@@ -12,11 +13,16 @@ export default function Produtos() {
   }, []);
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex flex-row items-center justify-center min-h-screen bg-gray-100">
+        <div>
+        <Filtro  />
+        </div>
+        
+        
         <div className=" flex flex-wrap w-[600px] h-full gap-2 mt-8 mb-10">
           {produtos.map((produto) => (
             <div
-              className="text-white w[300px] h-[200px] bg-black p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
+              className="text-white  bg-black p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
               key={produto.id}
             >
               <h2>{produto.nome}</h2>

@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <div className="h-[450px] bg-[#F5F5F5] flex flex-col justify-center items-center  ">
-        <div className="container pt-32 ">
+        <div className="container pt-8 ">
           <Carrosel produtos={ListaTenis} className="bg-[#F5F5F5]" />
         </div>
       </div>
-      <ColecoesEmDestaqueDesconto />
+      <ColecoesEmDestaqueDesconto  />
       <ColecoesEmDestaqueCategoria />
       <ProdutosEmDestaque />
       <OfertaEspecial />

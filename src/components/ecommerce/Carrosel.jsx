@@ -12,10 +12,10 @@ export default function Carrosel({ produtos }) {
     <Carousel>
       <CarouselContent className="flex"> 
         {produtos.map((produto) => {
-          // if (!produto.id) {
-          //   console.error("Produto sem ID:", produto);
-          //   return null;
-          // }
+          if (!produto.id) {
+            console.error("Produto sem ID:", produto);
+            return null;
+          }
           return (
             <CarouselItem
               key={produto.id}

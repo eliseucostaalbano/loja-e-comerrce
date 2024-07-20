@@ -16,10 +16,10 @@ function ProdutosEmDestaque() {
   const [produtos, setProdutos] = useState([]);
   return (
     <>
-      <div className="bg-[#F5F5F5] ">
+      <div className="bg-[#F5F5F5]  ">
         <div className="flex justify-between">
-          <div>
-            <h1 className="font-bold">Produtos em Destaque</h1>
+          <div className="">
+            <h1 className="font-bold">Produtos em Alta</h1>
           </div>
           <div className="">
         <Link to="/produtos">
@@ -30,10 +30,10 @@ function ProdutosEmDestaque() {
             
           </div>
         </div>
-        <div className=" flex flex-wrap w-full h-full gap-2 mt-4 mb-4">
+        <div className=" flex flex-wrap w-full h-full gap-2  mb-4 justify-center align-center ml-6">
           {produtos.map((produto) => (
             <div
-              className="text-black w-[300px] h-[200px] bg-white p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
+              className="text-black w-[300px] h-[150px] bg-white p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
               key={produto.id}
             >
               <h2>{produto.nome}</h2>
@@ -43,8 +43,8 @@ function ProdutosEmDestaque() {
                 alt={produto.id}
               />
               <div className="flex mx-9">
-                <p className=" mx-2 text-black">{produto.preco_original}</p>
-                <p className="text-black">{produto.preco_desconto}</p>
+                <p className=" mx-2 text-gray-300 line-through">${produto.preco_original}</p>
+                <p className="text-black">${produto.preco_desconto}</p>
               </div>
             </div>
           ))}
