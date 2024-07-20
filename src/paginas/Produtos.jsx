@@ -1,5 +1,6 @@
 import Filtro from "../components/ecommerce/Filtro";
 import axios from "axios";
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from "react";
 
 
@@ -14,15 +15,13 @@ export default function Produtos() {
   return (
     <>
       <div className="flex flex-row items-center justify-center min-h-screen bg-gray-100">
-        <div>
+        
         <Filtro  />
-        </div>
-        
-        
+       
         <div className=" flex flex-wrap w-[600px] h-full gap-2 mt-8 mb-10">
           {produtos.map((produto) => (
-            <div
-              className="text-white  bg-black p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
+          <Link to={`/produto/${produto.id}`}>
+            <div className="text-black bg-white p-2 rounded-md overflow-hidden flex items-center justify-center flex-col"
               key={produto.id}
             >
               <h2>{produto.nome}</h2>
@@ -32,10 +31,12 @@ export default function Produtos() {
                 alt={produto.id}
               />
               <div className="flex mx-9">
-                <p className=" mx-2 text-white">{produto.preco_original}</p>
-                <p className="text-white">{produto.preco_desconto}</p>
+                <p className=" mx-2 text-gray-300 line-through"> ${produto.preco_original}</p>
+                <p className="text-black">${produto.preco_desconto}</p>
               </div>
             </div>
+          </Link>
+            
           ))}
         </div>
       </div>
