@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/button";
 function OfertaEspecial() {
   return (
     <>
-      <div className="flex  w-full flex-row justify-center items-center">
+      <div className="flex  w-full flex-row justify-center items-center mb-[20px]">
   <div className="flex justify-between">
    <img src={ParTenis} alt="Par de Tenis" className="w-[400px] px-10 mx-10 flex justify-between"/>
      

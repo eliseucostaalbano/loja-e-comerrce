@@ -1,6 +1,6 @@
 export default function Filtro() {
   return (
-    <div className="flex mb-[400px] mr-4">
+    <div className="flex mb-[300px] mr-4">
       <div className="bg-white p-4 w-[250px]">
         <h1 className="mb-3 text-xl font-bold">Filtrar por</h1>
         <div className="border-b mb-4 "></div>
