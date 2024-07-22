@@ -1,7 +1,7 @@
 import Header from "./Header";
-import Main from "./Main";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
+import Main from "../ecommerce/Main";
 
 function Layout() {
   return (

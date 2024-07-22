@@ -27,7 +27,7 @@ const Menu = [
 
 export default function Header() {
   return (
-    <div className=" pt-4 bg-white shadow-md">
+    <div className=" pt-4 bg-white shadow-md ">
       {/* Nav Bar de cima */}
       <div className="w-full">
         <div className="container flex justify-between items-center mx-auto px-4">
@@ -45,7 +45,7 @@ export default function Header() {
             </a>
           </div>
           {/* Barra  de busca e ordem dos butões*/}
-          <div className="relative  hidden sm:block flex-1 mx-4">
+          <div className="relative hidden sm:block flex-1 mx-4">
             <input
               type="text"
               placeholder="Pesquisar Produto..."

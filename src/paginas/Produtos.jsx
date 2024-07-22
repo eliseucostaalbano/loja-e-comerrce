@@ -33,8 +33,8 @@ export default function Produtos() {
                 alt={produto.nome}
               />
               <div className="flex mx-9 pl-2 gap-2 ">
-                <p>{produto.preco_original}</p>
-                <p>{produto.preco_desconto}</p>
+                <p className="mx-2 text-gray-300 line-through">${produto.preco_original}</p>
+                <p>${produto.preco_desconto}</p>
               </div>
             </div>
           </Link>
