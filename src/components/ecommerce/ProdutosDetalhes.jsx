@@ -15,6 +15,8 @@ export default function ProdutoDetalhe() {
             .catch((error) => console.log(error));
     }, [id]);
 
+    console.log (produto)
+
     return (
         <div className="align-center justify-center bg-[#F5F5F5]">
             <div className="flex gap-4">
@@ -96,23 +98,27 @@ export default function ProdutoDetalhe() {
                     </div>
                     <div>
                         <h1 className="text-gray-600 mt-4">Tamanho</h1>
-                        {/* <div className="flex">
-                            <p>{produto.tamanhos[1]}</p>
-                        </div> */}
+                        <div className="flex">
+                            <p className="border w-8  h-8 bg-white ml-3 text-center">37</p>
+                            <p className="border w-8  h-8 bg-white ml-3 text-center">38</p>
+                            <p className="border w-8  h-8 bg-white ml-3 text-center">40</p>
+                            <p className="border w-8  h-8 bg-white ml-3 text-center">41</p>
+                            <p className="border w-8  h-8 bg-white ml-3 text-center">42</p>
+                        </div>
                     </div>
                     <div>
                         <h1 className="text-gray-600 mt-4 rounded-full">Cores</h1>
                         <div className="flex">
-                            <p className="border w-8  h-8 bg-white ml-3 rounded-full bg-[#6FEEFF]">
+                            <p className="border w-8  h-8  ml-3 rounded-full bg-[#6FEEFF]">
                                 
                             </p>
-                            <p className="border w-8 bg-white ml-3 rounded-full bg-[#FF6969]">
+                            <p className="border w-8 ml-3 rounded-full bg-[#FF6969]">
                                 
                             </p>
-                            <p className="border w-8 bg-white ml-3 rounded-full bg-[#5E5E5E]">
+                            <p className="border w-8 ml-3 rounded-full bg-[#5E5E5E]">
                                 
                             </p>
-                            <p className="border w-8 bg-white ml-3 rounded-full bg-[#6D70B7]">
+                            <p className="border w-8  ml-3 rounded-full bg-[#6D70B7]">
                                 
                             </p>
                         </div>

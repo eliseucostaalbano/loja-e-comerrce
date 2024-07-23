@@ -4,5 +4,5 @@
 <h1>O Projeto  foi criado usando React com Vite, Tailwind CSS e Shadcn-UI</h1> 
 <img src="src/assets/vite.jpeg" alt="Imagem 1" width="150"/>
   <img src="src/assets/React.jpeg" alt="Imagem 2" width="150"/>
-
+  <img src="/assets/Tailwind.jpeg" alt= "Imagem3" width ="150"
 
